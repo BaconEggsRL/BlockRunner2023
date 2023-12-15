@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_over"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tan.blockrunner.GameOverActivity"
+    android:animationCache="true"
+    android:onClick="toMenu">
+
+    <TextView
+        android:text="Game Over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvGameOver"
+        android:autoText="true"
+        android:textSize="36sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:text="Time: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/tvTime"
+        android:layout_below="@+id/tvScore"
+        android:layout_alignRight="@+id/tvScore"
+        android:layout_alignEnd="@+id/tvScore" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SCORE"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tvScore"
+        android:layout_toEndOf="@+id/tvScore" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TIME"
+        android:layout_alignBaseline="@+id/tvTime"
+        android:layout_alignBottom="@+id/tvTime"
+        android:layout_alignLeft="@+id/SCORE"
+        android:layout_alignStart="@+id/SCORE" />
+
+    <TextView
+        android:text="Score: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvScore"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/tvGameOver"
+        android:layout_alignStart="@+id/tvGameOver" />
+
+    <TextView
+        android:text="Tap anywhere to return to the main menu."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:id="@+id/tvReturn"
+        android:layout_below="@+id/tvTime"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
